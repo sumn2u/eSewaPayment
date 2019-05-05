@@ -42,7 +42,8 @@ var Quickbeam = (function () {
       }
 
       if (price) {
-        price = price.innerHTML;
+        // price = price.innerHTML;
+        price = document.getElementById('price-preview').innerHTML
       }
 
       if (ProductImage) {
@@ -543,10 +544,10 @@ var Quickbeam = (function () {
         var window_w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
         if (window_w > 600) {
-          cartPay.setAttribute("href", "/checkout");
+          // cartPay.setAttribute("href", "/checkout");
           cartPay.classList.remove("cart-ico");
         } else {
-          cartPay.setAttribute("href", "/cart");
+          // cartPay.setAttribute("href", "/cart");
           cartPay.classList.add("cart-ico");
         }
       }
